@@ -1,0 +1,87 @@
+* {
+  font-family: 'Public Sans', sans-serif;
+}
+
+html,
+body,
+#mapdiv {
+  height: 100%;
+}
+
+h4{
+  color: #CC7722;
+}
+
+.errorMsg {
+  padding: 0;
+  text-align: center;
+  background-color: salmon;
+}
+
+.col-xs-12,
+.col-xs-6,
+.col-xs-4 {
+  padding: 3px;
+}
+
+.ui-autocomplete {
+  max-height: 80%;
+  overflow-y: auto;
+  /* prevent horizontal scrollbar */
+  overflow-x: hidden;
+}
+
+.sidenav a, .dropdown-btn {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #CC7722;
+}
+
+.active {
+  color: #CC7722;
+}
+
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+#btnLocate{
+  color: #fff;
+  background-color: #CC7722;
+  border-color: #CC7722;
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(133, 146, 163, 0.4);
+}
+
+#btnLocate:hover{
+  color: #fff !important;
+  background-color: #E19549 !important;
+  border-color: #E19549 !important;
+  transition-duration: 500ms !important;
+  transform: translateY(-1px) !important;
+}
+
+.leaflet-bar a:hover {
+  background-color: #CC7722;
+}
+
+.selected {
+  background-color: #007bff;
+  color: white;
+}

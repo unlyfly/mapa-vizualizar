@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa de Acceso a la Información</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="src/leaflet/leaflet.css" />
+  <script src="src/leaflet/leaflet.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.9.0/proj4.js"></script>
+
+  <script src="src/jquery-3.7.0/jquery.js"></script>
+
+  <link rel="stylesheet" href="src/jquery-3.7.0/jquery-ui.min.css" />
+  <script src="src/jquery-3.7.0/jquery-ui.min.js"></script>
+
+  <script src="src/L.crs/proj4leaflet.js"></script>
+
+  <script src="src/leaflet.ajax/leaflet-ajax.min.js"></script>
+
+  <script src="src/wfst/leaflet-wfst.src.js"></script>
+
+  <script src="src/leaflet.geoserver/L.Geoserver.js"></script>
+  
+  <script src="src/leaflet.wms/Leaflet-WMS.js"></script>
+
+  <link rel="stylesheet" href="src/bootstrap-5.3.1-dist/css/bootstrap.min.css" />
+  <script src="src/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="src/fontawesome-6.4.2/css/all.min.css" />
+  <script src="src/fontawesome-6.4.2/js/all.min.js"></script>
+
+  <link rel="stylesheet" href="src/easybutton/easy-button.css" />
+  <script src="src/easybutton/easy-button.js"></script>
+
+  <link rel="stylesheet" href="src/sidebar/L.Control.Sidebar.css" />
+  <script src="src/sidebar/L.Control.Sidebar.js"></script>
+
+  <link rel="stylesheet" href="src/L.switchBasemap/L.switchBasemap.css" />
+  <script src="src/L.switchBasemap/L.switchBasemap.js"></script>
+
+  <link rel="stylesheet" href="src/leaflet.search/leaflet.search.css" />
+  <script src="src/leaflet.search/leaflet.search.js"></script>
+
+  <script src="src/leaflet.providers/leaflet-providers.js"></script>
+
+  <link rel="stylesheet" href="includes/css/style.css" />
+</head>
+
+<body>
+  <div id="consulta-bar" class="side-bar" style="border-radius: 1rem">
+    <h4 class="mt-3">CONSULTA CAPAS</h4>
+    <ul id="layerSelects" class="list-group mt-4" style="list-style-type: none"></ul>
+
+    <div id="tablaEst" class="text-center col-sm-12 mt-4"></div>
+
+    <div class="d-grid gap-2 mt-4">
+      <button id="btnLocate" class="btn">
+        UBICACIÓN
+      </button>
+    </div>
+  </div>
+
+  <div id="mapdiv"></div>
+
+  
+  <script src="includes/js/procesamiento.js"></script>
+  <script src="includes/js/apiGeoserver.js"></script>
+  <script src="includes/js/generadorCapas.js"></script>
+</body>
+
+</html>
